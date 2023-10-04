@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+/* Left part of the header */
+.header-left {
+    position: relative;
+    text-align: left;
+}
+
+.header-left h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.header-left p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Right part of the header (navbar) */
+.header-right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.header-right li {
+    margin-right: 20px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Dark gray color on hover */
+.header-right a:hover {
+    color: coral;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
