@@ -1,4 +1,6 @@
-var pageTitle = "hobby, które zmieniło moje życie";
+// Title change, after tab change
+
+var pageTitle = "piłka ręczna w moim życiu";
 var newTitle = "znudziłem cię?";
 
 function handleVisibilityChange() {
@@ -8,5 +10,3 @@ function handleVisibilityChange() {
         document.title = pageTitle;
     }
 }
-
-document.addEventListener("visibilitychange", handleVisibilityChange, false);
