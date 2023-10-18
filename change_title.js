@@ -1,7 +1,7 @@
 // Title change, after tab change
 
-var pageTitle = "piłka ręczna w moim życiu";
-var newTitle = "znudziłem cię?";
+const pageTitle = "piłka ręczna w moim życiu";
+const newTitle = "znudziłem cię?";
 
 function handleVisibilityChange() {
     if (document.hidden) {
@@ -10,3 +10,5 @@ function handleVisibilityChange() {
         document.title = pageTitle;
     }
 }
+
+document.addEventListener("visibilitychange", handleVisibilityChange);
