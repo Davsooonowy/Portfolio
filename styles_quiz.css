@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+    --template-color: #201c1c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@
 }
 
 header {
-    background-color: #201c1c;
+    background-color: var(--template-color);
     border: none;
     color: #fff;
     display: flex;
@@ -50,6 +54,7 @@ header {
 
 .header-left p:hover, h1:hover, .header-right a:hover{
     color: #737373;
+    cursor: pointer;
 }
 
 
@@ -59,7 +64,7 @@ main {
     align-items: center;
     height: 100vh;
     min-height: 600px;
-    background: radial-gradient(circle, #ffffff 0%, #201c1c 100%);
+    background: radial-gradient(circle, #ffffff 0%, var(--template-color) 100%);
     overflow: hidden;
 }
 
@@ -125,7 +130,7 @@ main {
 }
 
 .quiz-footer button {
-    background: #201c1c;
+    background: var(--template-color);
     padding: 0.6rem 1.5rem;
     outline: none;
     border: 0;
@@ -143,7 +148,7 @@ main {
 
 .quiz-body button {
 
-    background: #201c1c;
+    background: var(--template-color);
     padding: 0.6rem 1.5rem;
     outline: none;
     border: 0;
@@ -157,7 +162,7 @@ main {
 }
 
 footer {
-    background-color: #201c1c;
+    background-color: var(--template-color);
     color: #fff;
     text-align: center;
     font-weight: 300;
