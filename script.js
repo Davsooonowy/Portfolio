@@ -9,7 +9,33 @@ function handleVisibilityChange() {
         document.title = pageTitle;
     }
 }
+
+/*=================== DOUBLE CLICK TO OPEN PROJECTS ===================*/
 document.addEventListener("visibilitychange", handleVisibilityChange);
+
+const projectBoxes = document.querySelectorAll('.box');
+
+projectBoxes.forEach(box => {
+    let clicked = false;
+
+    box.addEventListener('click', function (event) {
+        if (clicked) {
+            // Second click, activate the link
+            const link = this.querySelector('a');
+            if (link) {
+                link.setAttribute('target', '_blank');
+                window.location.href = link.href;
+            }
+        } else {
+            // First click, toggle the active-hover class
+            this.classList.toggle('active-hover');
+            clicked = true;
+
+            // Prevent the default link behavior
+            event.preventDefault();
+        }
+    });
+});
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) =>{
