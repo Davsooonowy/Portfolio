@@ -1,2 +1,0 @@
-interview.mp4 filter=lfs diff=lfs merge=lfs -text
-images/interview.mp4 filter=lfs diff=lfs merge=lfs -text

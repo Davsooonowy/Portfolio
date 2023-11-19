@@ -1,90 +1,191 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Author" content="Dawid Mularczyk" />
-    <meta name="Description" content="Strona poświęcona piłce ręcznej" />
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="images/ikonka.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/photo_home.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="change_title.js"></script>
-    <title>piłka ręczna w moim życiu</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a2b8f71397.js" crossorigin="anonymous"></script>
+    <title>Dawid Mularczyk - Portfolio</title>
 </head>
 <body>
-<header>
-    <div class="header-left">
-        <a href="index.html"><h1>Dawid Mularczyk</h1></a>
-        <a href="index.html"><p>Moje najważniejsze hobby</p></a>
-    </div>
-    <nav class="header-right">
-        <a href="index.html"><i class="material-icons">home</i></a>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Dawid Mularczyk</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
     </nav>
 </header>
 
-<main>
-    <section>
-        <a href="history.html">
-            <div class="bg-photo" style="background-image: url('images/my_photo.jpg')"></div>
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">
+                Hi,<br>I'm <span class="home__title-color">Dawid</span><br>
+                <div class="t_animation__container"><span class="animated__text">Ambitious Student</span></div>
+            </h1>
 
-            <div class="article-title">
-                <h2>Moja Historia</h2>
-            </div>
+            <a href="cv_replacement.pdf" class="button" target="_blank">Download CV</a>
+        </div>
 
-            <div class="content">
-                <p>
-                    Zapraszam Cię na fascynującą podróż przez moje życie z piłką ręczną! Dowiesz się między innymi, w jaki
-                    sposób rozpocząłem przygodę z tym sportem, poznasz przebieg mojej kariery oraz czego się nauczyłem.
-                    Kliknij tutaj, aby <b>poznać więcej</b> !🤾‍♂️📖
-                </p>
-            </div>
-        </a>
+        <div class="home__social">
+            <a href="https://www.facebook.com/Davsooonowy" class="home__social-icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.linkedin.com/in/dawidmularczykwork/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Davsooonowy" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+        </div>
 
+        <div class="home__img">
+            <img src="images/photo_home.png" >
+        </div>
     </section>
 
-    <section>
-        <a href="quiz.html">
-            <div class="bg-photo" style="background-image: url('images/quizz.jpg')"></div>
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
 
-            <div class="article-title">
-                <h2>Quiz</h2>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="images/zdjecie_do_cv.jpg" alt="">
             </div>
 
-            <div class="content">
-                <p>
-                    Czy jesteś gotowy na wyzwanie i chcesz sprawdzić swoją wiedzę z zakresu piłki ręcznej? Niezależnie od tego,
-                    czy jesteś wielkim fanem tego sportu, czy dopiero zaczynasz się nim interesować, ten quiz dostarczy
-                    Ci mnóstwo radości i wiedzy. Kliknij tutaj, aby rozpocząć zabawę!🤾‍♂️🧠
-                </p>
+            <div>
+                <h2 class="about__subtitle">Hi! Nice to meet you <span class="wave">👋</span></h2>
+                <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
             </div>
-        </a>
-
+        </div>
     </section>
 
-    <section>
-        <a href="contact.html">
-            <div class="bg-photo" style="background-image: url('images/contact_photo.jpg')"></div>
-
-            <div class="article-title">
-                <h2>Kontakt</h2>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__container bd-grid">
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
             </div>
-
-            <div class="content">
-                <p>
-                    Czy masz pytania, sugestie lub po prostu chcesz się ze mną skontaktować? Jestem tu, aby Ci pomóc! Twoja
-                    opinia i feedback są dla mnie niezwykle ważne. Kliknij tutaj, aby wysłać mi wiadomość. Czekam na kontakt!
-                    📩🤝
-                </p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-python skills__icon' ></i>
+                    <span class="skills__name">PYTHON</span>
+                </div>
             </div>
-        </a>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <span class="skills__name">CSS3</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-java skills__icon' ></i>
+                    <span class="skills__name">JAVA</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-javascript skills__icon' ></i>
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='fa-brands fa-rust fa-xl" skills__icon'></i>
+                    <span class="skills__name">RUST</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-git skills__icon' ></i>
+                    <span class="skills__name">GIT</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-data skills__icon' ></i>
+                    <span class="skills__name">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== PROJECTS =====-->
+    <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects_container bd-grid">
+            <div class="box">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+                    <img src="images/project1.png" alt="">
+                    <div class="overlay">
+                        <h3>Handball website</h3>
+                        <p>responsive website with quiz, contact me and history section. You cun run it directly on GitHub
+                        via GitHubPages</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+                    <img src="images/project2.png" alt="">
+                    <div class="overlay">
+                        <h3>My Portfolio</h3>
+                        <p>You are currently on this project, I hope you like it
+                            <i class="fa-solid fa-heart fa-beat" style="color: red;"></i></p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://github.com/Davsooonowy/CoctailBlender_MobileApp" target="_blank">
+                    <img src="images/projekt3.png" alt="">
+                    <div class="overlay">
+                        <h3>CoctailMaker <br><span style="color: red;">IN PROGRESS</span></h3>
+                        <p>A mobile application showing what drinks you can make with things you have</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Send" class="contact__button button">
+            </form>
+        </div>
     </section>
 </main>
 
+<!--===== FOOTER =====-->
 <footer>
-    <p>&copy; 2023 Dawid Mularczyk — WI AGH</p>
+    <p>&copy; 2023 Dawid Mularczyk</p>
 </footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
 </body>
 </html>
-

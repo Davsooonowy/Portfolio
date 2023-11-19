@@ -1,4 +1,2 @@
-# mini_projekt_WDAI
-kod źródłowy strony internetowej poświęconej mojej historii z piłką ręczną. Projekt na przedmiot WDAI na wydziale informatyki AGH <br />
-<br/>
-strona wykorzystuje html5, css oraz troszeczkę javascript
+# Portfolio
+simple modern-looking portfolio created with usage of html, css and js.
