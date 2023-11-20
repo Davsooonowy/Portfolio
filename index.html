@@ -69,7 +69,10 @@
 
             <div>
                 <h2 class="about__subtitle">Hi! Nice to meet you <span class="wave">👋</span></h2>
-                <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+                <p class="about__text">
+                    My name is Dawid Mularczyk. I am a student of Computer Science at the Faculty of Computer Science at
+                    AGH UST.
+                </p>
             </div>
         </div>
     </section>
@@ -77,6 +80,9 @@
     <!--===== SKILLS =====-->
     <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
+        <p class="section_description bd-grid">
+            Here are some of my projects. Click on the project to see more.
+        </p>
         <div class="skills__container bd-grid">
             <div class="skills__data">
                 <div class="skills__names">
@@ -132,36 +138,49 @@
     <!--===== PROJECTS =====-->
     <section class="projects section" id="projects">
         <h2 class="section-title">Projects</h2>
+        <p class="section_description bd-grid">
+            Here are some of my projects. Click on the project to see more.
+        </p>
         <div class="projects_container bd-grid">
-            <div class="box active-hover">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
-                    <img src="images/project1.png" alt="">
+            <div class="box">
+                <a href="https://davsooonowy.github.io/Website_About_Handball/" target="_blank">
+                    <img src="images/project11.png" alt="">
                     <div class="overlay">
                         <h3>Handball website</h3>
-                        <p>responsive website with quiz, contact me and history section. You cun run it directly on GitHub
-                        via GitHubPages</p>
+                        <p>responsive website with quiz, contact me and history section.</p>
                     </div>
                 </a>
             </div>
-            <div class="box active-hover">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+            <div class="box">
+                <a href="https://dawidmularczyk.live/" target="_blank">
                     <img src="images/project2.png" alt="">
                     <div class="overlay">
                         <h3>My Portfolio</h3>
-                        <p>You are currently on this project, I hope you like it
+                        <p>You are currently on this project, I hope you enjoy it
                             <i class="fa-solid fa-heart fa-beat" style="color: red;"></i></p>
                     </div>
                 </a>
             </div>
-            <div class="box active-hover">
+            <div class="box">
+                <a href="https://davsooonowy.github.io/Zombie_Game/" target="_blank">
+                    <img src="images/project4.png" alt="">
+                    <div class="overlay">
+                        <h3>Zombie Game <br></h3>
+                        <p>Simple web zombie shooter game, created with html, css and js. This game was an assigment for
+                            Introduction To Web Applications course. </p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
                 <a href="https://github.com/Davsooonowy/CoctailBlender_MobileApp" target="_blank">
                     <img src="images/projekt3.png" alt="">
                     <div class="overlay">
                         <h3>CoctailMaker <br><span style="color: red;">IN PROGRESS</span></h3>
-                        <p>A mobile application showing what drinks you can make with things you have</p>
+                        <p>A mobile application showing what drinks you can make with things you have.</p>
                     </div>
                 </a>
             </div>
+
         </div>
     </section>
 
@@ -170,14 +189,43 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <input type="text" placeholder="Name" class="contact__input">
-                <input type="mail" placeholder="Email" class="contact__input">
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                <input type="button" value="Send" class="contact__button button">
-            </form>
+            <div class="contact__info">
+                <div class="contact__title">
+                    <h3>Contact detail</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                </div>
+                <div class="contact__content">
+                    <div class="info">
+                        <i class="fas fa-mobile-alt "></i>
+                        <div class="info-text">
+                            <h4>PHONE :</h4>
+                            <p>+48 883 067 466</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <div class="info-text">
+                            <h4>EMAIL :</h4>
+                            <p>muldaw@student.agh.edu.pl, dawid.mularczyk@onet.pl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__line"></div>
+
+            <div class="contact__form">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="email" placeholder="Email" class="contact__input">
+                    <input type="text" placeholder="Subject" class="contact__input">
+                    <textarea name="" id="" placeholder="message" cols="0" rows="5" class="contact__input"></textarea>
+                    <button class="contact__button button" type="submit">Send Now!</button>
+                </form>
+            </div>
         </div>
     </section>
+
 </main>
 
 <!--===== FOOTER =====-->

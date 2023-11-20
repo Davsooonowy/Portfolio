@@ -9,33 +9,8 @@ function handleVisibilityChange() {
         document.title = pageTitle;
     }
 }
-
-/*=================== DOUBLE CLICK TO OPEN PROJECTS ===================*/
 document.addEventListener("visibilitychange", handleVisibilityChange);
 
-const projectBoxes = document.querySelectorAll('.box');
-
-projectBoxes.forEach(box => {
-    let clicked = false;
-
-    box.addEventListener('click', function (event) {
-        if (clicked) {
-            // Second click, activate the link
-            const link = this.querySelector('a');
-            if (link) {
-                link.setAttribute('target', '_blank');
-                window.location.href = link.href;
-            }
-        } else {
-            // First click, toggle the active-hover class
-            this.classList.toggle('active-hover');
-            clicked = true;
-
-            // Prevent the default link behavior
-            event.preventDefault();
-        }
-    });
-});
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) =>{
@@ -55,7 +30,6 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -64,7 +38,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== ANIMATED TEXT ====================*/
 const text = document.querySelector(".animated__text");
 const textLoad = () => {
-    /* setting the text, and time inside the text container */
     setTimeout(() => {
         text.textContent = "Ambitious Student";
     }, 0);
@@ -99,11 +72,34 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
+/*==================== HOVER ALWAYS ON (FOR DEVICES WITHOUT HOVER EFFECT) ====================*/
+document.addEventListener('DOMContentLoaded', function () {
+    const projectBoxes = document.querySelectorAll('.projects_container .box');
+
+    function toggleHoverEffect() {
+        const isSmallScreen = window.innerWidth <= 767;
+
+        projectBoxes.forEach(box => {
+            if (isSmallScreen) {
+                box.classList.add('hover-effect');
+            } else {
+                box.classList.remove('hover-effect');
+            }
+        });
+    }
+
+    toggleHoverEffect();
+
+    window.addEventListener('resize', toggleHoverEffect);
+});
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
+    duration: 1600,
     delay: 200,
 });
 
@@ -118,3 +114,5 @@ sr.reveal('.about__subtitle, .about__text', { delay: 300 });
 sr.reveal('.skills__icon, .skills__name', { interval: 150 });
 sr.reveal('.box', { interval: 200 });
 sr.reveal('.contact__input', { interval: 200 });
+sr.reveal('.section_description', { interval: 200 });
+sr.reveal('.contact__info, .contact__title, .contact__content, .info', { interval: 200 });
