@@ -283,6 +283,11 @@ img {
     bottom: 0;
     width: 260px;
 }
+.section_description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-4);
+}
 
 /*BUTTONS*/
 .button {
@@ -463,12 +468,17 @@ img {
 .projects_container .box:hover {
     transform: scale(1);
 }
-.section_description {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: var(--mb-4);
+.projects_container .box.hover-effect {
+    transform: scale(1.1);
 }
 
+.projects_container .box.hover-effect img .overlay {
+    transform: scale(1.1);
+}
+
+.projects_container .box.hover-effect .overlay {
+    height: 100%;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -553,6 +563,7 @@ footer {
     font-weight: 300;
     padding: 10px 0;
 }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 768px) {
     .contact__info {
@@ -575,6 +586,7 @@ footer {
         padding-left: 0;
     }
 }
+
 @media screen and (max-width: 320px) {
     .home {
         row-gap: 2rem;
@@ -618,13 +630,6 @@ footer {
         column-gap: 2rem;
         padding-top: 2rem;
     }
-    /*.contact__form {*/
-    /*    width: 360px;*/
-    /*    padding-top: 2rem;*/
-    /*}*/
-    /*.contact__container {*/
-    /*    justify-items: center;*/
-    /*}*/
 }
 
 @media screen and (min-width: 768px) {
@@ -696,16 +701,3 @@ footer {
         width: 450px;
     }
 }
-
-.projects_container .box.hover-effect {
-    transform: scale(1.1);
-}
-
-.projects_container .box.hover-effect img .overlay {
-    transform: scale(1.1);
-}
-
-.projects_container .box.hover-effect .overlay {
-    height: 100%;
-}
-

@@ -116,3 +116,19 @@ sr.reveal('.box', { interval: 200 });
 sr.reveal('.contact__input', { interval: 200 });
 sr.reveal('.section_description', { interval: 200 });
 sr.reveal('.contact__info, .contact__title, .contact__content, .info', { interval: 200 });
+
+/*==================== CONTACT FORM ====================*/
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name == "" || email == "" || message == "") {
+        alert("Please fill out all required fields.");
+        return false;
+    }
+
+    // You can add more specific validation here if needed
+
+    return true;
+}
