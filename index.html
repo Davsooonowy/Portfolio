@@ -217,13 +217,11 @@
             <div class="contact__line"></div>
 
             <div class="contact__form">
-                <form id="contactForm" action="process_form.php" method="post" class="contact__form" onsubmit="return validateForm()">
+                <form id="contactForm" class="contact__form" onsubmit="return validateForm()" action="https://formspree.io/f/xyyqavpa" method="POST">
                     <input type="text" name="name" id="name" placeholder="Name" class="contact__input" required>
                     <input type="email" name="email" id="email" placeholder="Email" class="contact__input" required>
                     <input type="text" name="subject" id="subject" placeholder="Subject" class="contact__input">
                     <textarea name="message" id="message" placeholder="Message" cols="0" rows="5" class="contact__input" required></textarea>
-
-                    <input type="hidden" name="csrf_token" value="<?php echo bin2hex(random_bytes(32)); ?>">
 
                     <button class="contact__button button" type="submit">Send Now!</button>
                 </form>

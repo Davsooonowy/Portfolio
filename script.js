@@ -127,8 +127,7 @@ function validateForm() {
         alert("Please fill out all required fields.");
         return false;
     }
-
-    // You can add more specific validation here if needed
-
     return true;
 }
+
+/*==================== SEND EMAIL ====================*/
