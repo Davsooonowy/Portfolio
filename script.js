@@ -42,15 +42,18 @@ const textLoad = () => {
         text.textContent = "Ambitious Student";
     }, 0);
     setTimeout(() => {
-        text.textContent = "Computer Science";
+        text.textContent = "CS Enthusiast";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "Programmer";
+        text.textContent = "Code Artisan";
     }, 8000);
+    setTimeout(() => {
+        text.textContent = "Tech Explorer";
+    }, 12000);
 }
 
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 16000);
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -129,5 +132,3 @@ function validateForm() {
     }
     return true;
 }
-
-/*==================== SEND EMAIL ====================*/
