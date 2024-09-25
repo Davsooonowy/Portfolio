@@ -123,6 +123,11 @@ sr.reveal('.timeline', {delay: 200});
 sr.reveal('.box', {interval: 200});
 sr.reveal('.contact__input', {interval: 200});
 sr.reveal('.section_description', {interval: 200});
+sr.reveal('.projcard', {interval: 200});
+sr.reveal('.projcard-title', {interval: 200});
+sr.reveal('.projcard-subtitle', {interval: 200});
+sr.reveal('.projcard-description', {interval: 200});
+sr.reveal('.more-projects', {interval: 200});
 sr.reveal('.contact__info, .contact__title, .contact__content, .info', {interval: 200});
 
 /*==================== CONTACT FORM ====================*/
@@ -207,3 +212,8 @@ function handleToggleSwitchChange() {
 toggleSwitch.addEventListener('change', handleToggleSwitchChange);
 
 handleToggleSwitchChange();
+
+document.querySelectorAll(".projcard-description").forEach(function(box) {
+	$clamp(box, {clamp: 6});
+});
+
