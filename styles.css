@@ -443,15 +443,10 @@ img {
     opacity: 0.07;
 }
 
-.projcard:nth-child(2n)::before {
+.projcard-link:nth-child(2n)::before {
     background-image: linear-gradient(-250deg, var(--secondary-color), transparent 50%);
 }
 
-.projcard-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
 
 .projcard-innerbox {
     position: absolute;
@@ -470,7 +465,7 @@ img {
     transition: transform 0.2s ease;
 }
 
-.projcard:nth-child(2n) .projcard-img {
+.projcard-link:nth-child(2n) .projcard-img {
     left: initial;
     right: 0;
 }
@@ -492,9 +487,14 @@ img {
     font-size: var(--smaller-font-size);
 }
 
-.projcard:nth-child(2n) .projcard-textbox {
+.projcard-link:nth-child(2n) .projcard-textbox {
     left: initial;
     right: 26.875rem;
+}
+.projcard-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .projcard-textbox::before,
@@ -509,7 +509,7 @@ img {
     transform: rotate(8deg);
 }
 
-.projcard:nth-child(2n) .projcard-textbox::before {
+.projcard-link:nth-child(2n) .projcard-textbox::before {
     display: none;
 }
 
@@ -519,7 +519,7 @@ img {
     right: -3.4375rem;
 }
 
-.projcard:nth-child(2n) .projcard-textbox::after {
+.projcard-link:nth-child(2n) .projcard-textbox::after {
     display: block;
 }
 
