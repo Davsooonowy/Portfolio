@@ -396,6 +396,7 @@ img {
 }
 
 /* ===== PROJECTS =====*/
+
 .projcard-container {
     margin: 5rem 0;
 }
@@ -444,6 +445,12 @@ img {
 
 .projcard:nth-child(2n)::before {
     background-image: linear-gradient(-250deg, var(--secondary-color), transparent 50%);
+}
+
+.projcard-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .projcard-innerbox {
